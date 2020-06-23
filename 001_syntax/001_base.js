@@ -4,13 +4,17 @@
  *
  */
 function helloWorld() {
+  console.log('Hello World');
+  
 }
 
 /**
  *  1.2 const を使って定義した変数を出力するdisplayConstメソッドを実装してください
  *
  */
-function displayConst() {
+ function displayConst() {
+  const  x = a;
+  console.log(x);
 }
 
 /**
@@ -18,13 +22,15 @@ function displayConst() {
  *
  */
 function displayLet() {
-}
-
-/**
+  let y = b; 
+  console.log(y);
+ }
+ /**
  *  1.4 引数に渡した変数を表示するメソッドを実装してください
  *
  */
 function displayArgument(arg) {
+  console.log(arg);
 }
 
 /**
@@ -32,6 +38,7 @@ function displayArgument(arg) {
  *
  */
 function sumTwoArgs(a, b) {
+  return a + b;
 }
 
 /**
@@ -39,6 +46,7 @@ function sumTwoArgs(a, b) {
  *
  */
 function subtractTwoArgs(a, b) {
+  return a - b;
 }
 
 /**
@@ -46,6 +54,7 @@ function subtractTwoArgs(a, b) {
  *
  */
 function quotientTwoArgs(a, b) {
+  return a / b;
 }
 
 /**
@@ -53,6 +62,7 @@ function quotientTwoArgs(a, b) {
  *
  */
 function productTwoArgs(a, b) {
+  return a * b;
 }
 
 /**
@@ -60,6 +70,7 @@ function productTwoArgs(a, b) {
  *
  */
 function remainderTwoArgs(a) {
+  return a % 2;
 }
 
 /**
@@ -67,6 +78,7 @@ function remainderTwoArgs(a) {
  *
  */
 function isEven(a) {
+  console.log( a % 2 == 0);
 }
 
 /**
@@ -74,4 +86,5 @@ function isEven(a) {
  *
  */
 function concatString(a, b) {
+  console.log('a' + 'b');
 }
