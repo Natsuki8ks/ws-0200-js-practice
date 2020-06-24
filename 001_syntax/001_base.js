@@ -4,8 +4,7 @@
  *
  */
 function helloWorld() {
-  console.log('Hello World');
-  
+  console.log("Hello World");
 }
 
 /**
@@ -13,7 +12,7 @@ function helloWorld() {
  *
  */
  function displayConst() {
-  const  x = a;
+  const  x = "a";
   console.log(x);
 }
 
@@ -22,7 +21,7 @@ function helloWorld() {
  *
  */
 function displayLet() {
-  let y = b; 
+  let y = "b"; 
   console.log(y);
  }
  /**
@@ -32,6 +31,7 @@ function displayLet() {
 function displayArgument(arg) {
   console.log(arg);
 }
+displayArgumen('c');
 
 /**
  *  1.5 渡された二つの引数の合計を返却するメソッドを実装してください
@@ -78,13 +78,14 @@ function remainderTwoArgs(a) {
  *
  */
 function isEven(a) {
-  console.log( a % 2 == 0);
+  return a % 2 === 0;
 }
-
+console.log(isEven(9));
 /**
  *  1.11 渡された二つの文字列を連結するメソッドを実装してください
  *
  */
 function concatString(a, b) {
-  console.log('a' + 'b');
+  console.log(a + b);
 }
+concatString("siba","inu");

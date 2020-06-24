@@ -6,12 +6,13 @@
  *
  */
 function printMessageByAge(age) {
-  if (age >= 20) {
-    console.log('成人です。');
-  }else {
-    console.log('未成年です。');
-  }
+  console.log(10);
 }
+    if (age >= 20) {
+      console.log('成人です。');
+    }else {
+      console.log('未成年です。');
+    }
 
 /**
  *  2.2 引数から与えられた時間が
@@ -68,4 +69,5 @@ function getDay (day) {
       console.log('Saturday');
       break;
   }
+  console.log(3);
 }
