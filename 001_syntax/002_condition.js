@@ -6,13 +6,13 @@
  *
  */
 function printMessageByAge(age) {
-  console.log(10);
+  if (age >= 20) {
+    console.log('成人です。');
+  }else {
+    console.log('未成年です。');
+  }
 }
-    if (age >= 20) {
-      console.log('成人です。');
-    }else {
-      console.log('未成年です。');
-    }
+printMessageByAge(28);
 
 /**
  *  2.2 引数から与えられた時間が
@@ -22,16 +22,16 @@ function printMessageByAge(age) {
  *    と出力するメソッドを実装してください
  *
  */
-function greeding(hour) {
-  if (hour >= 4 || hour < 12) {
+function greeting(hour) {
+  if (hour >= 4 && hour < 12) {
     console.log('Good Morning');
-  }else if (hour < 17) {
+  } else if (hour < 17) {
     console.log('Hello');
-  }else {
+  } else {
     console.log('Good Night');
   }
 }
-
+greeting(20);
 /**
  *  2.3 引数から与えられた数字に対応する曜日を返却するメソッドを実装してください
  *    0 ・・・Sunday
@@ -69,5 +69,5 @@ function getDay (day) {
       console.log('Saturday');
       break;
   }
-  console.log(3);
 }
+getDay(3);
