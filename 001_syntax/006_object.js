@@ -8,7 +8,13 @@
  */
 
 function getPersonObject() {
+  const object = {
+    name: 'Bob',
+    age: 32,
+    gender: 'male',
+ };
 }
+
 
 /**
  *  6.2 下記データAが引数で与えられた場合にデータBに書き換える関数を実装してください。
@@ -25,7 +31,9 @@ function getPersonObject() {
  */
 
 function mutateObject(person) {
+ 
 }
+
 
 /**
  *  6.3 下記引数で渡される配列にランダムな1 ~10の数字を割り振り、オブジェクトとして返す
