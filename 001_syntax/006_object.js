@@ -69,21 +69,8 @@ function mutateObject(person) {
  *
  */
 
-function assignNumber(persons) {
-  
-  const randomNumber = [];
-    for (i = 1; i < 11; i++) {
-    randomNumber[i] = person.splice(Math.floor(Math.random() * results.length), 1)[0];
-    }
-   console.log(randomNumber);
-  
-  const  numbering = [];
-    Bob: randomNumber[0];
-    Mary: randomNumber[1];
-    Ann: randomNumber[2];
-    Mike: randomNumber[3];
-  
-}
+ 
+
 
 
 /**
@@ -97,15 +84,3 @@ function assignNumber(persons) {
  *
  */
 
-function isDuplicate(array) {
-  
-  const number = [1, 2, 3, 4, 4];
-  const s = new Set(number);
-
-  if (s.size != number.length) {
-    console.log('true');
-  } else {
-    console.log('false');
-  }
-  
-}

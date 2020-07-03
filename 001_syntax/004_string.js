@@ -63,7 +63,7 @@ isInclude('hogehohe','hoge');
  */
 
 function isPalindrome(str) {
-  return str === str.reverse();
+  const eva = (str === str.reverse());
 }
 isPalindrome('eve');
 //?

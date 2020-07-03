@@ -23,7 +23,20 @@
  */
 
 function fizzBuzz () {
+  for(let i = 1; i <= 100; i++){
+    if (i % 3 === 0 && i % 5 === 0){
+      console.log('FizzBuzz');
+    } else if (i % 3 === 0) {
+      console.log('Fizz');
+    } else if (i % 5 === 0) {
+      console.log('Buzz');
+    } else {
+      console.log(i);
+    }
+  }
 }
+fizzBuzz();
+
 
 /**
  *  2.1.2 配列の合計
@@ -38,8 +51,17 @@ function fizzBuzz () {
  */
 
 function sum(array) {
-  return
+  const sumArray = array => {
+    let sum = 0;
+    for (let i = 0, len = array.length; i < len; i++) {
+      sum += array[i];
+    }
+    return sum;
+  };
 }
+sum(1, 2, 3);
+
+//ooo
 
 /**
  *  2.1.3 配列の最大値と最小値
@@ -54,7 +76,18 @@ function sum(array) {
  */
 
 function minMax(array) {
+  const array = [1, 2, 3, 4];
+  const max = array[0];
+  const min = array[0];
+  for (let i = 0; i < array.length; i++) {
+    max = Math.max(array[i]);
+    min = Math.min(array[i]);
+  }
+  console.log(`max: ${max}`);
+  console.log(`min: ${min}`);
 }
+
+//ooo
 
 /**
  *  2.1.4 文字列の反転
@@ -68,8 +101,12 @@ function minMax(array) {
  *
  */
 function reverse(str) {
-  return
+  const reversed = str.reverse()
+  return reversed;
 }
+reverse('a','b','d');
+
+// ooo
 
 /**
  *  2.1.5 文字列のローテート
@@ -83,8 +120,11 @@ function reverse(str) {
  *
  */
 function rotate(str, num) {
-  return
+  return str.rotate;
 }
+rotate('development', 2);
+
+// ooo
 
 /**
  *  2.1.6 文字列のカウント
@@ -98,8 +138,17 @@ function rotate(str, num) {
  *
  */
 function countStr(s1, s2) {
-  return
-}
+  const count = 0;
+  const countStr = str.match(s2);
+  if (countStr == null) {
+    count = 0;
+    } else{
+      count = countStr.llength;
+    }
+  return countStr('mokomoko', 'moko');
+  }
+
+  //ooo
 
 /**
  *  2.1.7 素数
@@ -116,8 +165,22 @@ function countStr(s1, s2) {
  *
  */
 function isPrime(num) {
-  return
+  if(num === 2) {
+    return true;
+  } else {
+    for(i = 2; i < num; i++) {
+      if(num % 1 === 0) {
+        return false;
+        break;
+      } else if(i + 1 === num) {
+        return true;
+      }
+    }
+  }
 }
+isPrime(111);
+
+//ooo
 
 /**
  *  2.1.8 配列の4と次の数字を抜いた合計
@@ -135,5 +198,15 @@ function isPrime(num) {
  *
  */
 function sumWithout4andNext(array) {
-  return
+  let sum = 0;
+  const len = array.length;  
+  for(let i = 0; i < len; i++){
+    sum += array[i];
+  }
+  if (array === 4) {
+      continue;
+    }return sum;
 }
+sumWithout4andNext(1, 4, 5, 7);
+
+//ooo

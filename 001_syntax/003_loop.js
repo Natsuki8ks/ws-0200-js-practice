@@ -4,20 +4,30 @@
  */
 
 function printOneToTen() {
-  for (let i = 0; i < 10; i++);
+  for (let i = 0; i < 10; i++) {
   console.log(i);
+  }
 }
 printOneToTen();
+
 /**
  *  3.2 0~10までの数字を数字の大きい順に表示するメソッドを実装してください
  *
  */
 
+// function printOneToTenDesc() {
+//   for (let i = 10; i >= 0; i--);
+//   console.log(i);
+// }
+
 function printOneToTenDesc() {
-  for (let i = 10; i > 0; i--);
-  console.log(i);
+  for (let i = 10; i >= 0; i--) {
+    console.log(i);
+  }
 }
 printOneToTenDesc();
+
+
 /**
  *  3.3 while文を使って0~10までの数字を小さい順番に表示するメソッドを実装してください
  *
@@ -25,7 +35,7 @@ printOneToTenDesc();
 
 function printOneToTenWhile() {
   let i = 0;
-  while (i < 11) {
+  while (i < 10) {
     console.log(i);
     i ++;
   }
