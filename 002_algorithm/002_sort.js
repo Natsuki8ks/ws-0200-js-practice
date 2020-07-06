@@ -9,8 +9,19 @@
  */
 
 function bubbleSort (array) {
-  return array
+  obj = {};
+  for(let i = 0; i < array.length; i++) {
+    for(let j = array.length-1; j > i; j--){
+      if(array[j] < array[j-1]){
+        let tmp = array[j];
+        array[j] = array[j-1];
+        array[j-1] = tmp;
+      }
+    }
+  }
+  return obj;
 }
+console.log([1, 5, 2, 4, 3]);
 
 /**
  *  2.2.2 挿入ソート
@@ -23,8 +34,21 @@ function bubbleSort (array) {
  */
 
 function insertSort (array) {
-  return array
+  obj = {};
+  for(let i = 1; i < array.length; i++) {
+    let tmp = array[i];
+    for(let j = i-1; j >= 0; j--){
+      if(array[j] > tmp){
+        array[j+1] = array[j];
+      } else{
+        bresk;
+      }
+    }
+    array[j+1] = tmp;
+  }
+  return obj;
 }
+insertSort([10,3,1,4,2]);
 
 /**
  *  2.2.3 マージソート
@@ -37,8 +61,12 @@ function insertSort (array) {
  */
 
 function mergeSort (array) {
-  return array
+  this.array = [1,5,4,7,2];
+  let msort = array.sort(array);
+  return msort;
 }
+mergeSort();
+// Is sort a property?
 
 
 /**
@@ -52,6 +80,34 @@ function mergeSort (array) {
  */
 
 function quickSort (array, start = 0, end = (array.length -1)) {
-  return array
-};
+  let pivot= array[Math.floor((start + end) / 2)];
+  let left = start;
+  let right = end;
 
+  while(true){
+    while(array[left] < pivot){
+      left++;
+    }
+    while(pivot < array[right]) {
+      right++;
+    }
+    if(right <= left) {
+      break;
+    }
+    let tmp = array[left];
+    array[left] = array[right];
+    array[right] = tmp;
+    left++;
+    right--;
+  }
+  if(start < left-1) {
+    quickSort(start, left-1);
+  }
+  if(right+1 < end) {
+    quickSort(right+1, end);
+  }
+  return array;
+}
+
+let array =[1, 3, 2, 4, 5];
+console.log(array);

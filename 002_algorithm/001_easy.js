@@ -49,19 +49,13 @@ fizzBuzz();
  *    [1] => output: 1
  *
  */
-
 function sum(array) {
-  const sumArray = array => {
-    let sum = 0;
-    for (let i = 0, len = array.length; i < len; i++) {
-      sum += array[i];
-    }
-    return sum;
-  };
+  let sum = 0;
+  for (let i = 0, len = array.length; i < len; i++) {
+    sum += array[i];
+  }
+  return sum;
 }
-sum(1, 2, 3);
-
-//ooo
 
 /**
  *  2.1.3 配列の最大値と最小値
@@ -76,9 +70,7 @@ sum(1, 2, 3);
  */
 
 function minMax(array) {
-  const array = [1, 2, 3, 4];
-  const max = array[0];
-  const min = array[0];
+  
   for (let i = 0; i < array.length; i++) {
     max = Math.max(array[i]);
     min = Math.min(array[i]);
@@ -87,7 +79,8 @@ function minMax(array) {
   console.log(`min: ${min}`);
 }
 
-//ooo
+const array = [1, 2, 3, 4];
+//?
 
 /**
  *  2.1.4 文字列の反転
@@ -101,12 +94,15 @@ function minMax(array) {
  *
  */
 function reverse(str) {
-  const reversed = str.reverse()
-  return reversed;
-}
-reverse('a','b','d');
+  const obj = [];
+  for(let i = 0; i < str.length; i++){
+    const hoge = array[i];
 
-// ooo
+  }
+  return obj;
+}
+
+// ?
 
 /**
  *  2.1.5 文字列のローテート
@@ -120,9 +116,13 @@ reverse('a','b','d');
  *
  */
 function rotate(str, num) {
-  return str.rotate;
+  obj = [];
+  let a = str.slice(-1 * num);
+  str.unshift(a);
+  str.pop();
+  return obj;
 }
-rotate('development', 2);
+rotate('library', 2);
 
 // ooo
 

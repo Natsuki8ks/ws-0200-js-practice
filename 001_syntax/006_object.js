@@ -68,7 +68,15 @@ function mutateObject(person) {
  *     }
  *
  */
-
+function assignNumber(persons) {
+  obj = {}
+  for (i = 0; i < persons.length; i++) {
+       const key = persons[i]
+       obj[key] = Math.floor(Math.random() * (10 + 1))
+  }
+ return obj
+}
+assignNumber(['Bob', 'Mary']);
  
 
 
@@ -83,4 +91,15 @@ function mutateObject(person) {
  *    [] => false
  *
  */
-
+function isDuplicat (array) {
+  obj = {}
+  for (let i = 0; i < array.length; i++) {
+   const value = array[i]
+   if (obj[value]) {
+     return true
+   }
+   obj[value] = true
+  }
+  return false
+}
+isDuplicat([1, 2, 2, 4]);

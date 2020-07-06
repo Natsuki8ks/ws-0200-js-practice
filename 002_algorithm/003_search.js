@@ -12,8 +12,19 @@
  */
 
 function linearSearch (array, target) {
-  return -1
+  let index = -1;
+  for(let i = -1; i < array.length; i++){
+    if(array[i] == target){
+      index = 1;
+      return index;
+    } else {
+      return -1;
+    }
+  }
 }
+linearSearch([1,2,5,4], 4);
+
+// ?
 
 /**
  *  2.3.2 バイナリサーチ
@@ -26,6 +37,22 @@ function linearSearch (array, target) {
  */
 
 function binarySearch (array, target) {
-  return -1
+  let index = -1;
+  let left = 0;
+  let right = array.length-1;
+  while(left <= right){
+    middle = Math.floor((left + right)/2);
+    if(array[middle] == target){
+      index = middle;
+      break;
+    } else if(array[middle] < target){
+      left = middle + 1;
+    }else {
+      right = middle -1;
+    }
+  }
+  return index;
 }
+binarySearch([1, 2, 3, 4, 5], 2);
+
 

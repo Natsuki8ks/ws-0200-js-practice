@@ -11,8 +11,15 @@
  */
 
 function sumSequence (n, sum = 0) {
-  return n
+  obj = [];
+  for(let i = 0; i <= n; i++){
+    sum = sum + 1;
+    return sum;
+  }
+  return sum(obj[i]);
 }
+sumSequence(5);
+// ?
 
 /**
  *  2.4.2 フィボナッチ数
@@ -25,9 +32,20 @@ function sumSequence (n, sum = 0) {
  */
 
 function fibonacci (num, index = 0, array = []) {
-  return num
+  
+    const a = num;
+    const b = num - 1;
+    for(let i = 1; i<10; i++){
+      result = a + b;
+      // a = b;
+      // b = result;
+      return array[i];
+    }
 }
-
+fibonacci(10);
+  
+// ?
+  
 
 /**
  *  2.4.2 ディレクトリに含まれるファイルサイズの合計
